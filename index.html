@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <!-- daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="nav-container" class="navbar bg-base-300 flex justify-center mb-3">
+      </div>
+      <div class="m-auto flex justify-center mt-4 w-full">
+        <input type="text" id="search-box" placeholder="Type here" class="input input-bordered w-[50%] h-16" />
+        <button onclick="handleSearch()" id="search-btn" class="btn btn-success h-16 w-32 text-white text-xl">Success</button>
+      </div>
+      <div id="news-container" class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-7 ml-3 mr-3">
+      </div>
+
+      <div id="loading-spiner" class="loading-spiner flex justify-center items-center p-14 hidden">
+        <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" alt="">
+      </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
